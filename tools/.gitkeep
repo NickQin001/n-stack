@@ -1,0 +1,2 @@
+# Deterministic scripts live here. Skills call them; they do not reimplement them.
+# Empty on purpose. Do not treat a missing script as a successful run.
