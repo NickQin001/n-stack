@@ -1,6 +1,6 @@
 # N0 证据纪律
 
-这些是硬规则。技能、模板和以后的脚本都要服从它们。设计背景见 [N-stack.md](N-stack.md)。
+这些是硬规则。技能、模板和以后的脚本都要服从它们。设计背景见 [N-stack.md](N-stack.md)。各 bot 的共享前置见 [principles/shared-preamble.md](principles/shared-preamble.md)。
 
 ## 三条硬规则
 
