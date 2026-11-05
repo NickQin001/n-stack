@@ -4,7 +4,7 @@ Nick 的个人代理工程栈：以证据优先，把反复纠偏收成技能、
 
 N stack is Nick's personal agent engineering stack: evidence-first verification, skills, and kitchen constraints. It borrows principles discussed around poteto/pstack. It is not a fork, and pull-request count is not the goal.
 
-硬规则见 [principles.md](principles.md)。完整设计见 [N-stack.md](N-stack.md)。
+硬规则见 [principles.md](principles.md)。完整设计见 [N-stack.md](N-stack.md)。灵感链接见 [docs/references.md](docs/references.md)。
 
 ## 分层
 
@@ -17,6 +17,22 @@ N stack is Nick's personal agent engineering stack: evidence-first verification,
 | N4 | 技能库 | [skills/](skills/) |
 | N5 | 外环 | 尚未自动化 |
 | N6 | 权限阶梯 | 本地观察 → 受限改动 → 独立验证 → 云端分支 |
+
+## 工作循环
+
+顺序是 `plan → test → implement → review → verify → remember → improve`。这不是新的一层，而是穿过 N0–N6 的用法。顺序借自 ECC，落点是上面这些层，见 [docs/references.md](docs/references.md)。
+
+| 步骤 | 在这里的意思 | 层 |
+| --- | --- | --- |
+| plan | 先写用户能观察到的完成标准。工作可以从外环进来，「怎样算做完」由证据纪律决定。 | N5 进料，N0 定完成 |
+| test | 改代码前先定检查：怎么启动、哪一条用户路径、什么现象算失败。单测变绿本身不算这条检查。 | N1 |
+| implement | 在已有权限内改。稳定步骤进 `tools/`，不在技能里重写一遍。 | N2、N6 |
+| review | 把 diff 里的声称和这一轮实际跑过的分开。 | N0 |
+| verify | 按路径做一轮，留下命令输出、截图、日志或 trace 的位置。没有位置就保持「待确认」。 | N1、N0 |
+| remember | 只记下真实出现过的纠偏，收成技能或厨房日志。对话不在上下文里就不归纳。 | N4 |
+| improve | 同一捷径第二次出现，改 lint、类型、脚本或 CI。 | N3 |
+
+专职代理还没建。角色桩在 [agents/README.md](agents/README.md)。
 
 ## 怎么开始
 
@@ -31,5 +47,6 @@ N stack is Nick's personal agent engineering stack: evidence-first verification,
 - `tools/` 里没有脚本。技能不得假装已经跑过某个不存在的命令。
 - `evals/` 里没有失败样本，也没有评分。不要写虚构的通过记录。
 - `kitchen-log.md` 还没有抽样。空白表示尚未抽样，不表示产线干净。
+- `agents/` 只有角色桩，没有可运行的代理。
 
 许可：[MIT](LICENSE)。

@@ -78,6 +78,24 @@ Dune（内部 Electron 框架）的可迁移点不是「照抄框架名」，而
 | Outer / inner loop | N5：先手工外环也行，稳定后再自动化 |
 | Everyone’s own knives | 整套以 N 命名、进你自己的仓库，不整库 fork pstack |
 
+### 工作循环
+
+顺序借自 ECC，不引入它的代理目录：
+
+`plan → test → implement → review → verify → remember → improve`
+
+| 步骤 | 落到 |
+| --- | --- |
+| plan | N5 把工作送进来，N0 规定怎样才许写完成 |
+| test | N1：先有启动方式和一条用户路径 |
+| implement | N2 脚本，N6 权限阶梯 |
+| review | N0：声称与实测分栏 |
+| verify | N1：跑路径并留下证据位置 |
+| remember | N4：只从真实纠偏提炼技能 |
+| improve | N3：同一捷径第二次改环境 |
+
+用法写在仓库 `README.md`。链接与「只摘原则」的边界写在 `docs/references.md`。`agents/README.md` 里是角色桩，现在没有专职代理。
+
 ---
 
 ## 三、结合你现状的起步包（两周内可做）
@@ -103,7 +121,7 @@ Dune（内部 Electron 框架）的可迁移点不是「照抄框架名」，而
 ### 刻意不做（现在）
 - 不上 10 个协调代理、不追求自动合并  
 - 不把 PR 数当 KPI  
-- 不整库照搬 Dune / pstack；只借原则
+- 不整库照搬 Dune / pstack / ECC；只借原则。ECC 只贡献上面的循环顺序，不搬它的代理名单或技能正文
 
 ---
 
@@ -124,6 +142,8 @@ n-stack/
   tools/                    # 确定性脚本，技能只调用
   evals/                    # 失败样本 + 评分卡
   kitchen-log.md            # 每周：抽样发现的捷径 → 改了哪条规则
+  agents/README.md          # 专职代理的角色桩；现在没有可运行代理
+  docs/references.md        # pstack 与 ECC 的链接；只摘原则
 ```
 
 ### 三条硬规则（写进 principles）
@@ -141,6 +161,8 @@ n-stack/
 ---
 
 ## 参考（公开二次整理，非 B 站原始文件）
+
+上游仓库链接和「不整库复制」的边界见 `docs/references.md`。下面仍是访谈的二次整理，数字未经本仓库审计。
 
 - [Atlasnote：Poteto 的 2,500 个 PR](https://atlasnote.ai/zh-CN/articles/poteto-pstack-ai-agent-verification)  
 - [bsbarkur：Lauren Tan's agent kitchen](https://bsbarkur.github.io/explainers/poteto-pstack/)  
