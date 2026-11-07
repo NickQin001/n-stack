@@ -12,3 +12,5 @@
 | kitchen sampler | 把抽样看到的捷径记进厨房日志，并指出要改的规则或脚本 | N3、[kitchen-log.md](../kitchen-log.md) | 未实现 |
 
 未实现的意思是：没有独立代理，相关判断仍由正在做事的那一个代理按技能和模板完成。没有证据时，这些角色也不能把结论写成已核对或已验证。
+
+平台内容经核实后交接入库的职责和清单见 [docs/source-knowledge-handoff.md](../docs/source-knowledge-handoff.md)。当前 bot 名作为实例写在那一页。本表仍是上面四行未实现的桩。
