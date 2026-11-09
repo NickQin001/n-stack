@@ -18,6 +18,8 @@ N0 硬规则见 [principles.md](principles.md)。各 bot 共用前置见 [princi
 | N5 | 外环 | 尚未自动化 |
 | N6 | 权限阶梯 | 本地观察 → 受限改动 → 独立验证 → 云端分支 |
 
+B 站学习视频的登录态采集、资料包和长访谈覆盖见 [docs/bilibili-video-skills.md](docs/bilibili-video-skills.md)。这是已批准的职责记录，流水线尚未自动化。
+
 ## 工作循环
 
 顺序是 `plan → test → implement → review → verify → remember → improve`。这不是新的一层，而是穿过 N0–N6 的用法。顺序借自 ECC，落点是上面这些层，见 [docs/references.md](docs/references.md)。
