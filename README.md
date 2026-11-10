@@ -4,7 +4,7 @@ Nick 的个人代理工程栈：以证据优先，把反复纠偏收成技能、
 
 N stack is Nick's personal agent engineering stack: evidence-first verification, skills, and kitchen constraints. It borrows principles discussed around poteto/pstack. It is not a fork, and pull-request count is not the goal.
 
-N0 硬规则见 [principles.md](principles.md)。各 bot 共用前置见 [principles/shared-preamble.md](principles/shared-preamble.md)。完整设计见 [N-stack.md](N-stack.md)。灵感链接见 [docs/references.md](docs/references.md)。
+N0 硬规则见 [principles.md](principles.md)。各 bot 共用前置见 [principles/shared-preamble.md](principles/shared-preamble.md)。完整设计见 [N-stack.md](N-stack.md)。灵感链接见 [docs/references.md](docs/references.md)。跨仓库多 bot 协作见 [docs/multi-bot-repo-collaboration.md](docs/multi-bot-repo-collaboration.md)。
 
 ## 分层
 
