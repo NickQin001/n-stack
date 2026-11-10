@@ -36,6 +36,8 @@ B 站学习视频的登录态采集、资料包和长访谈覆盖见 [docs/bilib
 
 专职代理还没建。角色桩在 [agents/README.md](agents/README.md)。
 
+平台内容先核实再入库的职责和交接清单见 [docs/source-knowledge-handoff.md](docs/source-knowledge-handoff.md)。
+
 ## 怎么开始
 
 1. 先读 [principles.md](principles.md)。没有运行证据，不要写「已完成」或「已修复」。
@@ -43,6 +45,7 @@ B 站学习视频的登录态采集、资料包和长访谈覆盖见 [docs/bilib
 3. 核验资料时用 [templates/evidence-brief.md](templates/evidence-brief.md)，或按 [n-evidence-brief](skills/n-evidence-brief/SKILL.md) 填写。材料里的报告和这一轮实际执行必须分开。
 4. 要从旧对话里找反复纠偏，用 [n-recall-chat](skills/n-recall-chat/SKILL.md)。只根据拿得到的对话，不要编造。
 5. 同一类捷径出现第二次：记到 [kitchen-log.md](kitchen-log.md)，优先改环境（lint、类型、脚本、CI），而不是再加一句提醒。
+6. 平台上的视频要先由平台管理员实际获取并核实，再整理、再入库。按 [docs/source-knowledge-handoff.md](docs/source-knowledge-handoff.md) 由主管分步交接。
 
 ## 现在还没有的东西
 
@@ -50,5 +53,6 @@ B 站学习视频的登录态采集、资料包和长访谈覆盖见 [docs/bilib
 - `evals/` 里没有失败样本，也没有评分。不要写虚构的通过记录。
 - `kitchen-log.md` 还没有抽样。空白表示尚未抽样，不表示产线干净。
 - `agents/` 只有角色桩，没有可运行的代理。
+- 平台内容到领域知识库的交接尚未自动化，首次案例也未完成。约定见 [docs/source-knowledge-handoff.md](docs/source-knowledge-handoff.md)。没有获取和读取记录，不能写成已整理或已入库。
 
 许可：[MIT](LICENSE)。
